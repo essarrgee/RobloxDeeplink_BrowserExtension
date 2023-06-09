@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "Roblox Deeplink Extension",
+	"description": "",
+	"version": "1.0",
+	"icons": {
+		
+	},
+	"permissions": [
+		"tabs", "contextMenus"
+	],
+	"background": {
+		"service_worker": "context.js"
+	},
+	"icons": {
+		"16": "icon.png",
+		"48": "icon.png"
+	}
+}
