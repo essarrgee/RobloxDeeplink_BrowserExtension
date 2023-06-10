@@ -4,25 +4,22 @@
 	"description": "Quickly opens the game page and clicks the play button instead of opening the game through the app.",
 	"version": "1.0",
 	"icons": {
-		
+		"16": "icon.png",
+		"48": "icon.png"
 	},
+	"host_permissions": [
+		"<all_urls>"
+	],
 	"permissions": [
 		"tabs", "contextMenus", "storage"
 	],
 	"background": {
 		"service_worker": "context.js"
 	},
-	"host_permissions": [
-		"<all_urls>"
-	],
 	"content_scripts": [
 		{
 			"matches": ["https://www.roblox.com/games/*", "http://www.roblox.com/games/*"],
 			"js": ["content.js"]
 		}
-	],
-	"icons": {
-		"16": "icon.png",
-		"48": "icon.png"
-	}
+	]
 }
